@@ -1,6 +1,7 @@
 #!/bin/sh
-/usr/bin/invoke_app "$@" -C "start_jupyter -T @tool bin/Ising Model.ipynb" \
-                         -t ising \
-                         -u anaconda-7
-			 -r none
-			 -w headless
+
+/usr/bin/invoke_app "$@" -C "start_jupyter -T @tool bin/Ising Model.ipynb"
+-t ising
+-u anaconda-7
+-r none
+-w headless
